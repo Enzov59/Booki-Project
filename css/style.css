@@ -30,6 +30,10 @@ a {
     text-decoration: none;
 }
 
+.line {
+    height: 1.5em; /* Ajustez cette valeur selon vos besoins */
+  } 
+
 header {
     display: flex;
     align-items: center;
@@ -93,42 +97,48 @@ h1 {
 
 .search-container {
     display: flex;
-    width: 377px;
-    height: 49px;
-    gap: 24px;
-}
-
-.search-logo {
-    width: 50px; 
-    height: 49px;
-}
-
-.search-form {
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  .search-icon {
+    background-color: #f0f0f0; 
+    color: black; 
+    border-top-left-radius: 10px; 
+    border-bottom-left-radius: 10px;
+    padding: 8px;
+    font-size: 16px;
+    width: 20px;
+    height: 25px;
     display: flex;
     align-items: center;
-}
-
-input[type="text"] {
-    color:#000000;
-    width: 200px;
-    font-family: Raleway;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 21.13px;
+    justify-content: center;
+  }
+  
+  input[type="text"] {
+    padding: 9px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border: 1px solid #ccc;
+    border-right: none;
+    border-left: none;
+    font-weight: bold;
     text-align: center;
-}
+    font-size: 17px;
+  }
 
 .search-button {
-    width: 132px;
-    height: 49px;
-    background: none;
-    border: none;
+    background-color: blue; 
+    color: white; 
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 10px; 
+    border-bottom-right-radius: 10px;
+    padding: 8px 16px;
+    border: none; 
     cursor: pointer;
-}
-
-.search-button img {
-    max-width: 100%;
-}
+    font-size: 20px;
+  }
 
 .filters {
     display: flex;
