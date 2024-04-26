@@ -30,8 +30,17 @@ a {
     text-decoration: none;
 }
 
+.card-link {
+    display: block; /* Affiche le lien en tant que bloc pour qu'il prenne toute la largeur de la carte */
+    text-decoration: none; /* Supprime le soulignement du lien */
+    color: inherit; /* Utilise la couleur du texte par défaut */
+    border-radius: 20px; /* Ajoute des coins arrondis pour correspondre à la carte */
+    padding: 100px; /* Ajoute un espacement interne pour correspondre à la carte */
+    background-color: #ffffff;
+}
+
 .line {
-    height: 1.5em; /* Ajustez cette valeur selon vos besoins */
+    height: 1.5em;
   } 
 
 header {
@@ -322,6 +331,75 @@ h1 {
     margin-top: 40px;
     font-weight: bold;
 }
+
+.activites-cards {
+    display: flex;
+    justify-content: space-between; 
+    gap: 20px;
+}
+
+.activite-card {
+    width: calc(25% - 20px);
+    margin-bottom: 20px;
+    text-decoration: none;
+    flex-grow: 1;
+    border: 1px solid white; 
+    border-radius: 20px; 
+    overflow: hidden;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+.activites {
+    width: 100%;
+    height: auto;
+    padding: 30px 0px 0px 0px; 
+}
+
+.activite-card img {
+    width: 100%;
+    height: 380px;   
+}
+
+.activite-card h3 {
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+footer {
+    background-color: #f4f4f4;
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-column {
+    width: 30%;
+    padding-left: 20px
+}
+
+.footer-column h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.footer-column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 5px;
+    color: #666;
+}
+
+.footer-column ul li:hover {
+    color: #000;
+}
+
 
 
 
