@@ -472,11 +472,12 @@ footer {
 
     nav {
         width: 100%; 
-        font-size: 19px
+        font-size: 19px;
+        display: flex;
+        justify-content: space-evenly;
     }
 
     nav ul {
-        justify-content: space-evenly; 
         padding: 0;
     }
 
@@ -484,68 +485,11 @@ footer {
         margin-left: 20px; 
     }
 
-     nav ul li a:before {
-        display: none; 
-    }
-
-    .barre {
-        display: block;
-        height: 3px;
-        width: 100%;
-        background-color: #ccc;
-        position: relative;
-    }
-    
-    .barre::before, .barre::after {
-        content: '';
-        height: 100%;
+    nav ul li a:before {
+        top: auto; 
+        bottom: -10px; 
         width: 50%; 
-        position: absolute;
-        top: 0;
-    }
-    
-    .barre::before {
-        left: 0; 
-    }
-    
-    .barre::after {
-        right: 0; 
-    }
-    
-    /* Styles de base pour les boutons */
-    .nav1 {
-        color: black;
-    }
-    
-    .nav2 {
-        color: black;
-    }
-    
-    /* Styles lorsque le bouton est actif */
-    .nav1.active {
-        color: #0065FC;
-    }
-    
-    .nav2.active {
-        color: #0065FC;
-    }
-    
-    /* Styles pour la barre lorsque le bouton Hébergements est actif */
-    .nav1.active ~ .barre::before {
-        background-color: #0065FC;
-    }
-    
-    .nav1.active ~ .barre::after {
-        background-color: #ccc; 
-    }
-    
-    /* Styles pour la barre lorsque le bouton Activités est actif */
-    .nav2.active ~ .barre::before {
-        background-color: #ccc; 
-    }
-    
-    .nav2.active ~ .barre::after {
-        background-color: #0065FC;
+        left: 25%; 
     }
 
     .titre-container {
